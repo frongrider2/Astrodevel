@@ -6,7 +6,27 @@ const HeadEdit = () => {
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>AstroDev</title>
+      <meta
+        name="description"
+        content="We can build mobile or website application"
+      ></meta>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+
+      {/* og */}
+      <meta
+        name="og:title"
+        property="og:title"
+        content="Astrodev - softwarehouse"
+      ></meta>
+      <meta
+        name="og:description"
+        property="og:description"
+        content="We can build mobile or website application"
+      ></meta>
+      <meta
+        property="og:image"
+        content="https://img.icons8.com/ios/50/000000/astronaut-helmet.png"
+      />
 
       <link
         rel="shortcut icon"
