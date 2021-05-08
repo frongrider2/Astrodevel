@@ -14,7 +14,9 @@ const defaultOptions = {
 export default function Astronoute() {
   return (
     <div className="web-lottie-contain">
-      <Lottie options={defaultOptions} width={"60%"} />
+      <div>
+        <Lottie options={defaultOptions} width={"60%"} />
+      </div>
     </div>
   );
 }

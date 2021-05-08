@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
     <div className="main-menu-contain">
       <div className="main-menu">
-        <b style={{ fontSize: "50px" }}>👨‍🚀</b>
+        <b>👨‍🚀</b>
       </div>
       <Scroll.Link
         activeClass={"active-links"}

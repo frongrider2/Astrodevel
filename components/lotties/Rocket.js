@@ -14,7 +14,9 @@ const defaultOptions = {
 export default function Rocket() {
   return (
     <div className="web-lottie-contain">
-      <Lottie options={defaultOptions} width={"100%"} height={"100%"} />
+      <div>
+        <Lottie options={defaultOptions} width={"100%"} height={"100%"} />
+      </div>
     </div>
   );
 }

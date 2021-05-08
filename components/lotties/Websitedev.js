@@ -14,7 +14,9 @@ const defaultOptions = {
 export default function Websitedev() {
   return (
     <div className="web-lottie-contain">
-      <Lottie options={defaultOptions} width={"80%"} />
+      <div>
+        <Lottie options={defaultOptions} width={"80%"} />
+      </div>
     </div>
   );
 }

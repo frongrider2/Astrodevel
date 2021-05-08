@@ -50,6 +50,9 @@ h1 {
 .active-links * {
   color: #60a5fa;
 }
+.main-menu b {
+  font-size: 50px;
+}
 .main-menu i {
   font-size: 35px;
   transition: 0.5s;
@@ -77,6 +80,9 @@ h1 {
 }
 .web-lottie-contain {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .web-lottie-contain2 {
   width: 100%;
@@ -143,7 +149,6 @@ h1 {
   margin-bottom: 3rem;
 }
 .portfolio-div {
-  width: 100%;
   height: 35rem;
   display: grid;
   grid-template-rows: 26rem 1fr 1fr;
@@ -216,7 +221,6 @@ h1 {
 }
 .contact-contain {
   width: 100%;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: min-content 1fr;
@@ -293,4 +297,85 @@ h1 {
 .fade-exit {
   opacity: 0;
   transition: opacity 250ms ease-in;
+}
+
+.home-lottie {
+  width: 40%;
+}
+
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 80%;
+  }
+  .home-lottie {
+    width: 80%;
+  }
+  .moon-div h1 {
+    font-size: 2rem;
+  }
+  .portfolio-container {
+    padding: 0 2rem;
+  }
+  .profile-detail h2 {
+    font-size: 1.4rem;
+  }
+  .profile-detail b {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 70%;
+  }
+  .contact-contain h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 60%;
+  }
+  .layout-container {
+    grid-template-columns: 50px 1fr;
+  }
+  .main-menu-contain {
+    width: 50px;
+  }
+  .main-menu {
+    height: 50px;
+  }
+  .main-menu i {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  .main-menu b {
+    font-size: 40px;
+  }
+  .about-div {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+  }
+  .home-container {
+    height: 40vh;
+  }
+  .about-container h1 {
+    margin-bottom: 1rem;
+  }
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .portfolio-div {
+    height: 35rem;
+    grid-template-rows: 20rem 1fr 1fr;
+  }
+  .service-contain {
+    grid-template-columns: 1fr;
+  }
+  .contact-contain {
+    grid-template-columns: 1fr;
+  }
 }

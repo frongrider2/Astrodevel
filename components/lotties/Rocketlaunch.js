@@ -17,26 +17,28 @@ export default function Rocketlaunch() {
 
   return (
     <div className="web-lottie-contain2">
-      <Lottie
-        isStopped={pause}
-        eventListeners={[
-          {
-            eventName: "loopComplete",
-            callback: () => {
-              setPause(true);
-              setTimeout(() => {
-                setPause(false);
-              }, 6000);
+      <div>
+        <Lottie
+          isStopped={pause}
+          eventListeners={[
+            {
+              eventName: "loopComplete",
+              callback: () => {
+                setPause(true);
+                setTimeout(() => {
+                  setPause(false);
+                }, 6000);
+              },
             },
-          },
-        ]}
-        speed={0.6}
-        options={defaultOptions}
-        width={600}
-      />
+          ]}
+          speed={0.6}
+          options={defaultOptions}
+          width={"100%"}
+        />
+      </div>
       <CSSTransition in={pause} timeout={250} classNames="fade" unmountOnExit>
         <div className="moon-div">
-          <h1>Let's work together!! 🌕🌕🌕</h1>
+          <h1>Let's work together!! 🌕</h1>
         </div>
       </CSSTransition>
     </div>
